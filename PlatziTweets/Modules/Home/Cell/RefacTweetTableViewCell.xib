@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" indentationWidth="10" rowHeight="660" id="yiB-db-evl" userLabel="RefactorTweetTableViewCell" customClass="celdavacuna" customModule="Project5" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="738" height="660"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yiB-db-evl" id="ajR-kE-uwB">
+                <rect key="frame" x="0.0" y="0.0" width="738" height="660"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6y1-Ov-Lug">
+                        <rect key="frame" x="30" y="21" width="703.5" height="618"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5jg-tb-ZRb">
+                                <rect key="frame" x="0.0" y="0.0" width="703.5" height="60"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2hD-AO-YXC">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="1bw-BG-nQF"/>
+                                            <constraint firstAttribute="height" constant="60" id="arX-qH-xpz"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZTO-9m-P9Z">
+                                        <rect key="frame" x="60" y="0.0" width="643.5" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="William Brando Estrada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIM-ys-EBt">
+                                                <rect key="frame" x="5" y="5" width="633.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="@william96" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHd-eS-i3a">
+                                                <rect key="frame" x="5" y="25.5" width="633.5" height="29.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="ZHd-eS-i3a" secondAttribute="bottom" constant="5" id="2t7-pT-hh5"/>
+                                            <constraint firstItem="ZHd-eS-i3a" firstAttribute="top" secondItem="eIM-ys-EBt" secondAttribute="bottom" id="8kQ-AK-prb"/>
+                                            <constraint firstAttribute="trailing" secondItem="eIM-ys-EBt" secondAttribute="trailing" constant="5" id="FPI-QG-5OL"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZHd-eS-i3a" secondAttribute="trailing" constant="5" id="PZg-Fc-D5m"/>
+                                            <constraint firstItem="eIM-ys-EBt" firstAttribute="top" secondItem="ZTO-9m-P9Z" secondAttribute="top" constant="5" id="WZi-lJ-QhG"/>
+                                            <constraint firstItem="eIM-ys-EBt" firstAttribute="leading" secondItem="ZTO-9m-P9Z" secondAttribute="leading" constant="5" id="bda-Bl-9BA"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripccion de algun tweet, donde escribes lo que quieras cuando quieras y como quieras." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVn-ry-P4w">
+                                <rect key="frame" x="0.0" y="60" width="703.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hzh-vj-OKM">
+                                <rect key="frame" x="0.0" y="80.5" width="703.5" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="fnz-lH-EHV"/>
+                                    <constraint firstAttribute="width" constant="488" id="z5N-ST-ZqL"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEk-UI-DJt">
+                                <rect key="frame" x="0.0" y="400.5" width="703.5" height="197"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Zv-Ud-8Y8">
+                                <rect key="frame" x="0.0" y="597.5" width="703.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="6y1-Ov-Lug" secondAttribute="bottom" constant="10" id="15T-je-TjS"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6y1-Ov-Lug" secondAttribute="trailing" constant="10" id="no6-Er-gsd"/>
+                    <constraint firstItem="6y1-Ov-Lug" firstAttribute="leading" secondItem="ajR-kE-uwB" secondAttribute="leadingMargin" constant="10" id="ptJ-nG-q9Z"/>
+                    <constraint firstItem="6y1-Ov-Lug" firstAttribute="top" secondItem="ajR-kE-uwB" secondAttribute="topMargin" constant="10" id="sSU-l7-hUE"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
+                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                        <size key="value" width="0.0" height="2"/>
+                    </userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                        <real key="value" value="0.5"/>
+                    </userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="217.39130434782609" y="144.64285714285714"/>
+        </tableViewCell>
+    </objects>
+</document>

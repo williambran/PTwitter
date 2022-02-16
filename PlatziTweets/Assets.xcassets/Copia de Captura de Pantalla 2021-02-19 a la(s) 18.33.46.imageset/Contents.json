@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Copia de Captura de Pantalla 2021-02-19 a la(s) 18.33.46.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
